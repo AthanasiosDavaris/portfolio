@@ -103,16 +103,16 @@ function App() {
             <div className="flex justify-center gap-6 text-2xl">
               <a href="https://open.spotify.com/user/stopitoniichan?si=409be6ab41724436" target="_blank" className="hover:text-green-400 hover:scale-110 transition duration-300"><FaSpotify /></a>
               <a href="https://www.instagram.com/_.than0sss.__/" target="_blank" className="hover:text-pink-500 hover:scale-110 transition duration-300"><FaInstagram /></a>
-              <a href="www.linkedin.com/in/athanasios-davaris-8483a9338" target="_blank" className="hover:text-blue-500 hover:scale-110 transition duration-300"><FaLinkedin /></a>
+              <a href="https://www.linkedin.com/in/athanasios-davaris-8483a9338" target="_blank" className="hover:text-blue-500 hover:scale-110 transition duration-300"><FaLinkedin /></a>
               <a href="https://github.com/AthanasiosDavaris" target="_blank" className="hover:text-gray-400 hover:scale-110 transition duration-300"><FaGithub /></a>
               <a href="mailto:davthn08@gmail.com" className="hover:text-red-400 hover:scale-110 transition duration-300"><FaEnvelope/></a>
             </div>
           </div>
 
           {/* VOLUME CONTROL (Bottom Right) */}
-          <div className="fixed bottom-6 right-6 z-50 items-center gap-3 bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-lg hover:bg-black/80 transition">
+          <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-lg hover:bg-black/80 transition">
 
-            <button onClick={toggleMute} className="text-white hover:text-gray-300 trnasition">
+            <button onClick={toggleMute} className="text-white hover:text-gray-300 transition">
               {isMuted || volume === 0 ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
             </button>
 
