@@ -135,7 +135,7 @@ function App() {
                 About Me
               </h2>
               <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-                I am a final-year student in Informatics and Telecommunications. My ultimate career goal is to become a <strong className="text-white">Software Architect / System Designer</strong>, with a strong focus on <strong className="text-white">DevOps</strong>. I plan to start my career as a Full-Stack Developer to gain the necessary hands-on experience, deeply understand application lifecycles, and build the technical foundation required to design scalable, high-performance systems.
+                I am a final-year student in Informatics and Telecommunications. My ultimate career goal is to become a <strong className="text-white">Software Architect / System Designer</strong>, with a strong focus on <strong className="text-white">DevOps</strong>. I plan to start my career as a Full-Stack Developer to gain the necessary hands-on experience, while mastering the pillars of modern system design: <strong className="text-white">cloud-native technologies</strong> (like Kubernetes & Terraform), <strong className="text-white">resilient distributed systems</strong> (using frameworks like Spring Boot & ASP.NET), and the growing intersection of <strong className="text-white">AI and scalable infrastructure</strong>.
               </p>
             </div>
           </section>
