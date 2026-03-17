@@ -57,6 +57,8 @@ function App() {
         ref={videoRef}
         loop
         muted
+        playsInline
+        autoPlay
         className="fixed top-0 left-0 w-full h-full object-cover -z-10 brightness-50 scale-150"
       >
         <source src="/background.mp4" type="video/mp4"/>
@@ -172,7 +174,7 @@ function App() {
                 </div>
 
                 {/* Project 3 */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors md-col-span-2">
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors md:col-span-2">
                   <FaCode className="text-3xl mb-4 text-pink-400" />
                   <h3 className="text-xl font-semibold mb-2">Interactive Portfolio</h3>
                   <p className="text-gray-400 text-sm mb-4">This very website! A modern, responsive CV built with React, featuring glassmorphism UI and dynamic video backgrounds.</p>
@@ -215,27 +217,29 @@ function App() {
 
             </div>
           </section>
-
-          {/* VOLUME CONTROL (Fixed Bottom Right) */}
-          <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-lg hover:bg-black/80 transition">
-
-            <button onClick={toggleMute} className="text-white hover:text-gray-300 transition">
-              {isMuted || volume === 0 ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
-            </button>
-
-            {/* Slider */}
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.01"
-              value={isMuted ? 0 : volume}
-              onChange={handleVolumeChange}
-              className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-white"
-            />
-          </div>
           
         </main>
+      )}
+
+      {/* VOLUME CONTROL (Fixed Bottom Right) */}
+      {entered && (
+        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-lg hover:bg-black/80 transition">
+
+          <button onClick={toggleMute} className="text-white hover:text-gray-300 transition">
+            {isMuted || volume === 0 ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
+          </button>
+
+          {/* Slider */}
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value={isMuted ? 0 : volume}
+            onChange={handleVolumeChange}
+            className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-white"
+          />
+        </div>
       )}
     </div>
   )
