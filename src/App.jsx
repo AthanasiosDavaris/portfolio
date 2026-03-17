@@ -1,12 +1,12 @@
 import { useState, useRef } from 'react'
-import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle } from 'react-icons/fa'
+import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle, FaSitemap, FaMicrochip, FaWindowMaximize } from 'react-icons/fa'
 
 const skillCategories = {
   "Languages": ["C#", "Java", "Python", "C", "PHP", "JavaScript", "SQL", "Assembly"],
   "Frontend Development": ["React", "HTML5", "CSS3", "Tailwind CSS"],
-  "Backend Development": ["Flask", ".NET Framework", "Node.js (Basics)"],
+  "Backend Development": ["Flask", ".NET Framework", "Spring Boot", "gRPC"],
   "DevOps & Tools": ["Docker", "Git", "GitHub", "Linux", "Elasticsearch"],
-  "Core CS & Architecture": ["System Design", "Software Architecture", "OOP", "Algorithms & Data Structures", "Low-Level Programming", "Cybersecurity"]
+  "Core CS & Architecture": ["System Design", "Distributed Systems", "OOP", "Algorithms & Data Structures", "Low-Level Programming", "Cybersecurity"]
 };
 
 function App() {
@@ -160,6 +160,39 @@ function App() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Section 2.5: Current Focus */}
+          <section className="w-full max-w-4xl p-4 mb-12">
+            <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+              <h2 className="text-2xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider">
+                Current Focus & Development
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                {/* Learning Card 1 */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
+                  <FaSitemap className="text-3xl mb-4 text-teal-400" />
+                  <h3 className="text-lg font-semibold mb-2">Distributed Systems</h3>
+                  <p className="text-gray-400 text-sm">Building scalable microservices with Java, Spring Boot, and gRPC for high-performance communication.</p>
+                </div>
+
+                {/* Learning Card 2 */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
+                  <FaMicrochip className="text-3xl mb-4 text-indigo-400" />
+                  <h3 className="text-lg font-semibold mb-2">Systems Programming</h3>
+                  <p className="text-gray-400 text-sm">Deepening my understanding of memory management and system calls through low-level projects in C and Assembly.</p>
+                </div>
+
+                {/* Learning Card 3 */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
+                  <FaWindowMaximize className="text-3xl mb-4 text-sky-400" />
+                  <h3 className="text-lg font-semibold mb-2">C# & .NET Ecosystem</h3>
+                  <p className="text-gray-400 text-sm">Exploring application development within the .NET ecosystem by building small projects in C#.</p>
+                </div>
+                
               </div>
             </div>
           </section>
