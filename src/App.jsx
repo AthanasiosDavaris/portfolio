@@ -1,6 +1,14 @@
 import { useState, useRef } from 'react'
 import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle } from 'react-icons/fa'
 
+const skillCategories = {
+  "Languages": ["C#", "Java", "Python", "C", "PHP", "JavaScript", "SQL", "Assembly"],
+  "Frontend Development": ["React", "HTML5", "CSS3", "Tailwind CSS"],
+  "Backend Development": ["Flask", ".NET Framework", "Node.js (Basics)"],
+  "DevOps & Tools": ["Docker", "Git", "GitHub", "Linux", "Elasticsearch"],
+  "Core CS & Architecture": ["System Design", "Software Architecture", "OOP", "Algorithms & Data Structures", "Low-Level Programming", "Cybersecurity"]
+};
+
 function App() {
   // Tracks if the user has clicked "Enter"
   const [entered, setEntered] = useState(false)
@@ -139,12 +147,18 @@ function App() {
                 Skills & Technologies
               </h2>
 
-              <div className="flex flex-wrap gap-3">
-                {/* Skill Pills */}
-                {['Java', 'HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS', 'PHP', 'Python', 'Flask', 'Docker', 'Elasticsearch', 'LLMs / AI Agents', 'Git', 'GitHub', 'Cybersecurity Basics'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/5 rounded-full text-sm font-medium transition-colors cursor-default">
-                    {skill}
-                  </span>
+              <div className="space-y-6">
+                {Object.entries(skillCategories).map(([BiCategory, skills]) => (
+                  <div key={category}>
+                    <h3 className="text-lg font-semibold text-white/80 mb-3 tracking-wide"> {category}</h3>
+                    <div className="felx flex-wrap gap-3">
+                      {skills.map((skill) => (
+                        <span key={skill} className="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/5 rounded-full text-sm font-medium transition-colors cursor-default">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
