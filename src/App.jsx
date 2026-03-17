@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch } from 'react-icons/fa'
+import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle } from 'react-icons/fa'
 
 function App() {
   // Tracks if the user has clicked "Enter"
@@ -99,8 +99,8 @@ function App() {
 
               {/* Info Lines */}
               <div className="text-gray-300 text-sm mb-8 space-y-1 font-light">
-                <p>Informatics & Telecommunications Student</p>
-                <p>Full Stack Developer | Upcoming Software Architect - System Design</p>
+                <p>Final-Year Informatics & Telecommunications Student</p>
+                <p>Full Stack Developer | Future Software Architect</p>
               </div>
 
               {/* Social Icons */}
@@ -120,6 +120,18 @@ function App() {
             </div>
           </section>
 
+          {/* Section 1.5: About me */}
+          <section className="w-full max-w-4xl p-4 mb-12">
+            <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+              <h2 className="text-2xl font-bold mb-4 border-b border-white/20 pb-2 tracking-wider">
+                About Me
+              </h2>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                I am a final-year student in Informatics and Telecommunications. My ultimate career goal is to become a <strong className="text-white">Software Architect / System Designer</strong>, with a strong focus on <strong className="text-white">DevOps</strong>. I plan to start my career as a Full-Stack Developer to gain the necessary hands-on experience, deeply understand application lifecycles, and build the technical foundation required to design scalable, high-performance systems.
+              </p>
+            </div>
+          </section>
+
           {/* Section 2: Skills */}
           <section className="w-full max-w-4xl p-4 mb-12">
             <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
@@ -129,7 +141,7 @@ function App() {
 
               <div className="flex flex-wrap gap-3">
                 {/* Skill Pills */}
-                {['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS', 'PHP', 'Python', 'Flask', 'Docker', 'Elasticsearch', 'Git', 'GitHub'].map((skill) => (
+                {['Java', 'HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS', 'PHP', 'Python', 'Flask', 'Docker', 'Elasticsearch', 'LLMs / AI Agents', 'Git', 'GitHub', 'Cybersecurity Basics'].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/5 rounded-full text-sm font-medium transition-colors cursor-default">
                     {skill}
                   </span>
@@ -147,20 +159,44 @@ function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                {/* Project 1 */} 
+                {/* Project 1: Autonomous Agent */} 
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
+                  <FaRobot className="text-3xl mb-4 text-yellow-400" />
+                  <h3 className="text-xl font-semibold mb-2">Autonomous Grid Balancer</h3>
+                  <p className="text-gray-400 text-sm mb-4">A 4-person project building an LLM-based autonomous agent (Qwen2.5-Coder) with a hybrid FSM architecture to manage and balance an electrical power grid.</p>
+                  <div className="flex gap-2 text-xs text-gray-300">
+                    <span className="bg-black/50 px-2 py-1 rounded">Python</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">LLMs</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">smolagents</span>
+                  </div>
+                </div>
+
+                {/* Project 2: Search Engine */} 
                 <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
                   <FaSearch className="text-3xl mb-4 text-blue-400" />
                   <h3 className="text-xl font-semibold mb-2">Search Engine</h3>
-                  <p className="text-gray-400 text-sm mb-4">A full-stack search engine utilizing Docker for containerization and Elasticsearch for rapid, scalable data retrieval.</p>
+                  <p className="text-gray-400 text-sm mb-4">A 2-person full-stack search engine utilizing Docker for containerization and Elasticsearch for rapid, scalable data retrieval.</p>
                   <div className="flex gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">Python</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Flask</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Docker</span>
-                    <span className="bg-black/50 px-2 py-1 rounded">Elastic</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">ElasticSearch</span>
                   </div>
                 </div>
 
-                {/* Project 2 */}
+                {/* Project 3: Refugeoly */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
+                  <FaServer className="text-3xl mb-4 text-orange-400" />
+                  <h3 className="text-xl font-semibold mb-2">Refugeoly CLI Game</h3>
+                  <p className="text-gray-400 text-sm mb-4">A 2-person Java-based board game simulating the journey of refugees, featuring multiplayer support, dynamic events, and a save/load system.</p>
+                  <div className="flex gap-2 text-xs text-gray-300">
+                    <span className="bg-black/50 px-2 py-1 rounded">Java</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">OOP</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">CLI</span>
+                  </div>
+                </div>
+
+                {/* Project 4: Erasmus Platform */}
                 <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
                   <FaServer className="text-3xl mb-4 text-green-400" />
                   <h3 className="text-xl font-semibold mb-2">Erasmus Platform</h3>
@@ -173,8 +209,20 @@ function App() {
                   </div>
                 </div>
 
-                {/* Project 3 */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors md:col-span-2">
+                {/* Project 5: System Security */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
+                  <FaServer className="text-3xl mb-4 text-red-400" />
+                  <h3 className="text-xl font-semibold mb-2">Password Security Analysis</h3>
+                  <p className="text-gray-400 text-sm mb-4">An academic project focusing on password authentication security, utilizing tools like John the Ripper and Hashcat for offline password cracking.</p>
+                  <div className="flex gap-2 text-xs text-gray-300">
+                    <span className="bg-black/50 px-2 py-1 rounded">Security</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">John the Ripper</span>
+                    <span className="bg-black/50 px-2 py-1 rounded">Hashcat</span>
+                  </div>
+                </div>
+
+                {/* Project 6: Portfolio */}
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
                   <FaCode className="text-3xl mb-4 text-pink-400" />
                   <h3 className="text-xl font-semibold mb-2">Interactive Portfolio</h3>
                   <p className="text-gray-400 text-sm mb-4">This very website! A modern, responsive CV built with React, featuring glassmorphism UI and dynamic video backgrounds.</p>
@@ -189,15 +237,56 @@ function App() {
             </div>
           </section>
 
-          {/* Section 4: Languages & Education */}
+          {/* Certifications & Research */}
+          <section className="w-full max-w-4xl p-4 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              {/* Certifications */}
+              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+                <h2 className="text-xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider flex items-center gap-3">
+                  <FaCertificate className="text-yellow-400" /> Certifications
+                </h2>
+                <ul className="space-y-5">
+                  <li className="flex items-start gap-3">
+                    <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg" />
+                    <div>
+                      <h4 className="font-medium text-white leading-tight">Understanding Machine Learning</h4>
+                      <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg" />
+                    <div>
+                      <h4 className="font-medium text-white leading-tight">Boosting Productivity with AI</h4>
+                      <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Academic Research */}
+              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+                <h2 className="text-xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider flex items-center gap-3">
+                  <FaBook className="text-purple-400" /> Academic Research
+                </h2>
+                <div className="bg-white/5 border border-white/10 p-5 rounded-xl hover:bg-white/10 transition-colors">
+                  <h4 className="font-medium text-white text-sm mb-1">Ethical Issues in Student Data Analysis</h4>
+                  <p className="text-xs text-gray-400 mb-3">Course Research Paper - 2025</p>
+                  <p className="text-xs text-gray-300 leading-relaxed">Explored the ethical challenges, biases, and privacy concerns of using AI in educational data analysis, referencing the EU AI Act and GDPR.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 5: Languages & Education */}
           <section className="w-full max-w-4xl p-4 mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               {/* Education */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
                 <h2 className="text-xl font-bold mb-4 border-b border-white/20 pb-2 tracking-wider">Education</h2>
-                <h3 className="font-semibold text-lg">Studying Informatics & Telecommunications</h3>
-                <p className="text-gray-400 text-sm mt-1">Currently studying and expanding my knowledge in software engineering, algorithms, and full-stack development.</p>
+                <h3 className="font-semibold text-lg">BSc Informatics & Telecommunications</h3>
+                <p className="text-gray-400 text-sm mt-1">Currently in my final year, expanding my knowledge in software engineering, algorithms, and full-stack development.</p>
               </div>
 
               {/* Languages */}
