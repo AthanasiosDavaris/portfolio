@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen w-full text-white font-sans overflow-x-hidden relative bg-black">
+    <div className="min-h-screen w-full text-white font-sans overflow-x-hidden relative">
 
       {/* BACKGROUND VIDEO */}
       <video
@@ -61,7 +61,7 @@ function App() {
         autoPlay
         className="fixed top-0 left-0 w-full h-full object-cover -z-10 brightness-50 scale-150"
       >
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+        <source src="/background.mp4" type="video/mp4"/>
       </video>
 
       {/* CLICK TO ENTER OVERLAY */}
