@@ -57,7 +57,7 @@ function App() {
         ref={videoRef}
         loop
         muted
-        className="fixed top-0 left-0 w-full h-full object-cover -z-0 brightness-50 scale-150"
+        className="fixed top-0 left-0 w-full h-full object-cover -z-10 brightness-50 scale-150"
       >
         <source src="/background.mp4" type="video/mp4"/>
       </video>
@@ -66,7 +66,7 @@ function App() {
       {!entered && (
         <div
           onClick={handleEnter}
-          className="fixed inset-0 bg-black z-50 flex items-center justify-center cursor-point"
+          className="fixed inset-0 bg-black z-50 flex items-center justify-center cursor-pointer"
         >
           <p className="text-xl tracking-[0.5em] animate-pulse text-gray-400 hover:text-white transition-colors">
             [ CLICK TO ENTER... ]
@@ -160,7 +160,7 @@ function App() {
 
                 {/* Project 2 */}
                 <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaSearch className="text-3xl mb-4 text-green-400" />
+                  <FaServer className="text-3xl mb-4 text-green-400" />
                   <h3 className="text-xl font-semibold mb-2">Erasmus Platform</h3>
                   <p className="text-gray-400 text-sm mb-4">A full-stack university platform built to manage and facilitate the Erasmus student exchange program.</p>
                   <div className="flex gap-2 text-xs text-gray-300">
@@ -172,8 +172,8 @@ function App() {
                 </div>
 
                 {/* Project 3 */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaSearch className="text-3xl mb-4 text-pink-400" />
+                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors md-col-span-2">
+                  <FaCode className="text-3xl mb-4 text-pink-400" />
                   <h3 className="text-xl font-semibold mb-2">Interactive Portfolio</h3>
                   <p className="text-gray-400 text-sm mb-4">This very website! A modern, responsive CV built with React, featuring glassmorphism UI and dynamic video backgrounds.</p>
                   <div className="flex gap-2 text-xs text-gray-300">
@@ -199,7 +199,7 @@ function App() {
               </div>
 
               {/* Languages */}
-              <div className="bg-black/40 backdrop-blur-md border border/white/10 p-8 rounded-2xl">
+              <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl">
                 <h2 className="text-xl font-bold mb-4 border-b border-white/20 pb-2 tracking-wider">Languages</h2>
                 <ul className="space-y-3">
                   <li className="flex justify-between items-center">
