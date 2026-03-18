@@ -269,7 +269,7 @@ function App() {
                 </a>
 
                 {/* Project 6: Portfolio */}
-                <a href="https://github.com/AthanasiosDavaris/portfolio" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group md:col-span-2">
+                <a href="https://github.com/AthanasiosDavaris/portfolio" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                   <FaCode className="text-3xl mb-4 text-pink-400 group-hover:scale-110 transition-transform" />
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-300 transition-colors">Interactive Portfolio</h3>
                   <p className="text-gray-400 text-sm mb-4">This very website! A modern, responsive CV built with React, featuring glassmorphism UI and dynamic video backgrounds.</p>
