@@ -69,7 +69,7 @@ function App() {
         autoPlay
         className="fixed top-0 left-0 w-full h-full object-cover -z-10 brightness-50 scale-150"
       >
-        <source src="/background.mp4" type="video/mp4"/>
+        <source src="/background.mp4" type="video/mp4" />
       </video>
 
       {/* CLICK TO ENTER OVERLAY */}
@@ -92,7 +92,7 @@ function App() {
           <section className="min-h-screen flex flex-col items-center justify-center w-full p-4 relative">
             {/* The Glass Box */}
             <div className="bg-black/40 backdrop-blur-md border border-white/10 p-10 rounded-2xl max-w-md w-full text-center shadow-2xl">
-              
+
               {/* Profile Picture */}
               <div className="relative w-32 h-32 mx-auto mb-6">
                 <img
@@ -117,7 +117,7 @@ function App() {
                 <a href="https://www.instagram.com/_.than0sss.__/" target="_blank" className="hover:text-pink-500 hover:scale-110 transition duration-300"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/athanasios-davaris-8483a9338" target="_blank" className="hover:text-blue-500 hover:scale-110 transition duration-300"><FaLinkedin /></a>
                 <a href="https://github.com/AthanasiosDavaris" target="_blank" className="hover:text-gray-400 hover:scale-110 transition duration-300"><FaGithub /></a>
-                <a href="mailto:davthn08@gmail.com" className="hover:text-red-400 hover:scale-110 transition duration-300"><FaEnvelope/></a>
+                <a href="mailto:davthn08@gmail.com" className="hover:text-red-400 hover:scale-110 transition duration-300"><FaEnvelope /></a>
               </div>
             </div>
 
@@ -192,7 +192,7 @@ function App() {
                   <h3 className="text-lg font-semibold mb-2">C# & .NET Ecosystem</h3>
                   <p className="text-gray-400 text-sm">Exploring application development within the .NET ecosystem by building small projects in C#.</p>
                 </div>
-                
+
               </div>
             </div>
           </section>
@@ -206,79 +206,79 @@ function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                {/* Project 1: Autonomous Agent */} 
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaRobot className="text-3xl mb-4 text-yellow-400" />
-                  <h3 className="text-xl font-semibold mb-2">Autonomous Grid Balancer</h3>
+                {/* Project 1: Autonomous Agent */}
+                <a href="https://github.com/Geokara1/PYthon-project" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <FaRobot className="text-3xl mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-yellow-300 transition-colors">Autonomous Grid Balancer</h3>
                   <p className="text-gray-400 text-sm mb-4">A 4-person project building an LLM-based autonomous agent (Qwen2.5-Coder) with a hybrid FSM architecture to manage and balance an electrical power grid.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">Python</span>
                     <span className="bg-black/50 px-2 py-1 rounded">LLMs</span>
                     <span className="bg-black/50 px-2 py-1 rounded">smolagents</span>
                   </div>
-                </div>
+                </a>
 
-                {/* Project 2: Search Engine */} 
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaSearch className="text-3xl mb-4 text-blue-400" />
-                  <h3 className="text-xl font-semibold mb-2">Search Engine</h3>
+                {/* Project 2: Search Engine */}
+                <a href="https://github.com/AthanasiosDavaris/trash-search-engine" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <FaSearch className="text-3xl mb-4 text-blue-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-300 transition-colors">Search Engine</h3>
                   <p className="text-gray-400 text-sm mb-4">A 2-person full-stack search engine utilizing Docker for containerization and Elasticsearch for rapid, scalable data retrieval.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">Python</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Flask</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Docker</span>
                     <span className="bg-black/50 px-2 py-1 rounded">ElasticSearch</span>
                   </div>
-                </div>
+                </a>
 
                 {/* Project 3: Refugeoly */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaGamepad className="text-3xl mb-4 text-orange-400" />
-                  <h3 className="text-xl font-semibold mb-2">Refugeoly CLI Game</h3>
+                <a href="https://github.com/AthanasiosDavaris/Refugeoly" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <FaGamepad className="text-3xl mb-4 text-orange-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-orange-300 transition-colors">Refugeoly CLI Game</h3>
                   <p className="text-gray-400 text-sm mb-4">A 2-person Java-based board game simulating the journey of refugees, featuring multiplayer support, dynamic events, and a save/load system.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">Java</span>
                     <span className="bg-black/50 px-2 py-1 rounded">OOP</span>
                     <span className="bg-black/50 px-2 py-1 rounded">CLI</span>
                   </div>
-                </div>
+                </a>
 
                 {/* Project 4: Erasmus Platform */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaServer className="text-3xl mb-4 text-green-400" />
-                  <h3 className="text-xl font-semibold mb-2">Erasmus Platform</h3>
+                <a href="https://github.com/AthanasiosDavaris/Erasmus-Info-Website" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <FaServer className="text-3xl mb-4 text-green-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-green-300 transition-colors">Erasmus Platform</h3>
                   <p className="text-gray-400 text-sm mb-4">A full-stack university platform built to manage and facilitate the Erasmus student exchange program.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">PHP</span>
                     <span className="bg-black/50 px-2 py-1 rounded">HTML/CSS</span>
                     <span className="bg-black/50 px-2 py-1 rounded">JavaScript</span>
                     <span className="bg-black/50 px-2 py-1 rounded">API Calls</span>
                   </div>
-                </div>
+                </a>
 
                 {/* Project 5: System Security */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaLock className="text-3xl mb-4 text-red-400" />
-                  <h3 className="text-xl font-semibold mb-2">Password Security Analysis</h3>
+                <a href="/2nd_assignment.pdf" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <FaLock className="text-3xl mb-4 text-red-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-red-300 transition-colors">Password Security Analysis</h3>
                   <p className="text-gray-400 text-sm mb-4">An academic project focusing on password authentication security, utilizing tools like John the Ripper and Hashcat for offline password cracking.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">Security</span>
                     <span className="bg-black/50 px-2 py-1 rounded">John the Ripper</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Hashcat</span>
                   </div>
-                </div>
+                </a>
 
                 {/* Project 6: Portfolio */}
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
-                  <FaCode className="text-3xl mb-4 text-pink-400" />
-                  <h3 className="text-xl font-semibold mb-2">Interactive Portfolio</h3>
+                <a href="https://github.com/AthanasiosDavaris/portfolio" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group md:col-span-2">
+                  <FaCode className="text-3xl mb-4 text-pink-400 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-300 transition-colors">Interactive Portfolio</h3>
                   <p className="text-gray-400 text-sm mb-4">This very website! A modern, responsive CV built with React, featuring glassmorphism UI and dynamic video backgrounds.</p>
-                  <div className="flex gap-2 text-xs text-gray-300">
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     <span className="bg-black/50 px-2 py-1 rounded">React</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Tailwind CSS</span>
                     <span className="bg-black/50 px-2 py-1 rounded">Vite</span>
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -287,26 +287,30 @@ function App() {
           {/* Certifications & Research */}
           <section className="w-full max-w-4xl p-4 mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
+
               {/* Certifications */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
                 <h2 className="text-xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider flex items-center gap-3">
                   <FaCertificate className="text-yellow-400" /> Certifications
                 </h2>
                 <ul className="space-y-5">
-                  <li className="flex items-start gap-3">
-                    <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg" />
-                    <div>
-                      <h4 className="font-medium text-white leading-tight">Understanding Machine Learning</h4>
-                      <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
-                    </div>
+                  <li>
+                    <a href="/Grow_with_Google_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors cursor-pointer">
+                      <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg group-hover:scale-110 transition-transform" />
+                      <div>
+                        <h4 className="font-medium text-white leading-tight group-hover:text-blue-300 transition-colors">Understanding Machine Learning</h4>
+                        <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
+                      </div>
+                    </a>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg" />
-                    <div>
-                      <h4 className="font-medium text-white leading-tight">Boosting Productivity with AI</h4>
-                      <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
-                    </div>
+                  <li>
+                    <a href="/Grow_with_Google.pdf" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors cursor-pointer">
+                      <FaGoogle className="text-blue-400 mt-1 flex-shrink-0 text-lg group-hover:scale-110 transition-transform" />
+                      <div>
+                        <h4 className="font-medium text-white leading-tight group-hover:text-blue-300 transition-colors">Boosting Productivity with AI</h4>
+                        <p className="text-xs text-gray-400 mt-1">Grow with Google - March 2025</p>
+                      </div>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -316,11 +320,11 @@ function App() {
                 <h2 className="text-xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider flex items-center gap-3">
                   <FaBook className="text-purple-400" /> Academic Research
                 </h2>
-                <div className="bg-white/5 border border-white/10 p-5 rounded-xl hover:bg-white/10 transition-colors">
-                  <h4 className="font-medium text-white text-sm mb-1">Ethical Issues in Student Data Analysis</h4>
+                <a href="/ethics_paper.pdf" target="_blank" rel="noopener noreferrer" className="block bg-white/5 border border-white/10 p-5 rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                  <h4 className="font-medium text-white text-sm mb-1 group-hover:text-purple-300 transition-colors">Ethical Issues in Student Data Analysis</h4>
                   <p className="text-xs text-gray-400 mb-3">Course Research Paper - 2025</p>
                   <p className="text-xs text-gray-300 leading-relaxed">Explored the ethical challenges, biases, and privacy concerns of using AI in educational data analysis, referencing the EU AI Act and GDPR.</p>
-                </div>
+                </a>
               </div>
             </div>
           </section>
@@ -328,7 +332,7 @@ function App() {
           {/* Section 5: Languages & Education */}
           <section className="w-full max-w-4xl p-4 mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
+
               {/* Education */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
                 <h2 className="text-xl font-bold mb-4 border-b border-white/20 pb-2 tracking-wider">Education</h2>
@@ -353,7 +357,7 @@ function App() {
 
             </div>
           </section>
-          
+
         </main>
       )}
 
