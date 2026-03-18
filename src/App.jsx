@@ -76,9 +76,9 @@ function App() {
       {!entered && (
         <div
           onClick={handleEnter}
-          className="fixed inset-0 bg-black z-50 flex items-center justify-center cursor-pointer"
+          className="fixed inset-0 bg-black z-50 flex items-center justify-center cursor-pointer px-4"
         >
-          <p className="text-xl tracking-[0.5em] animate-pulse text-gray-400 hover:text-white transition-colors">
+          <p className="text-sm md:text-xl tracking-[0.2em] md:tracking-[0.5em] text-center whitespace-nowrap animate-pulse text-gray-400 hover:text-white transition-colors">
             [ CLICK TO ENTER... ]
           </p>
         </div>
