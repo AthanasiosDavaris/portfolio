@@ -17,16 +17,21 @@ function App() {
   const [volume, setVolume] = useState(0.1) // Starts at 10%
   const [isMuted, setIsMuted] = useState(false) // Starts unmuted (duhhh)
 
-  // Video Player Reference
+  // Media References
   const videoRef = useRef(null)
+  const audioRef = useRef(null)
 
   const handleEnter = () => {
     setEntered(true)
-    // When the user clicks, unmute and play the video
+    // When the user clicks, play the video
     if (videoRef.current) {
-      videoRef.current.muted = false;
-      videoRef.current.volume = 0.1;
       videoRef.current.play().catch(e => console.log("Playback error:", e));
+    }
+    // Play audio
+    if (audioRef.current) {
+      audioRef.current.volume = 0.1;
+      audioRef.current.muted = false;
+      audioRef.current.play().catch(e => console.log("Audio playback error:", e));
     }
   }
 
@@ -35,24 +40,24 @@ function App() {
     const newVolume = parseFloat(e.target.value)
     setVolume(newVolume)
 
-    if (videoRef.current) {
-      videoRef.current.volume = newVolume
+    if (audioRef.current) {
+      audioRef.current.volume = newVolume
       // If user slides to 0, gets treated as muted
       if (newVolume === 0) {
         setIsMuted(true)
-        videoRef.current.muted = true
+        audioRef.current.muted = true
       } else {
         setIsMuted(false)
-        videoRef.current.muted = false
+        audioRef.current.muted = false
       }
     }
   }
 
   // Mute Toggle Handler
   const toggleMute = () => {
-    if (videoRef.current) {
+    if (audioRef.current) {
       const newMutedState = !isMuted
-      videoRef.current.muted = newMutedState
+      audioRef.current.muted = newMutedState
       setIsMuted(newMutedState)
     }
   }
@@ -71,6 +76,11 @@ function App() {
       >
         <source src="/background.mp4" type="video/mp4" />
       </video>
+
+      {/* BACKGROUND AUDIO */}
+      <audio src="{audioRef} loop">
+        <source src="/lofi.mp3" type="audio/mpeg"/>
+      </audio>
 
       {/* CLICK TO ENTER OVERLAY */}
       {!entered && (
@@ -380,6 +390,14 @@ function App() {
             className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-white"
           />
         </div>
+      )}
+
+      {/* Footer & Credits */}
+      {entered && (
+        <footer className="relative z-10 w-full text-center pb-6 text-gray-500 text-xs">
+          <p>Music: "Good Night - Lofi Cozy Chill Music" by FASSounds (Royalty-Free)</p>
+          <p>&copy; 2026 Athanasios Davaris. All rights reserved.</p>
+        </footer>
       )}
     </div>
   )
