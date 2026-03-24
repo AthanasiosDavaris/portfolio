@@ -78,7 +78,7 @@ function App() {
       </video>
 
       {/* BACKGROUND AUDIO */}
-      <audio src="{audioRef} loop">
+      <audio src={audioRef} loop>
         <source src="/lofi.mp3" type="audio/mpeg"/>
       </audio>
 
