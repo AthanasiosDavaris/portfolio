@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle, FaSitemap, FaMicrochip, FaWindowMaximize } from 'react-icons/fa'
+import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle, FaSitemap, FaMicrochip, FaWindowMaximize, FaDiceD20, FaCar, FaCompactDisc } from 'react-icons/fa'
 
 const skillCategories = {
   "Languages": ["C#", "Java", "Python", "C", "PHP", "JavaScript", "SQL", "Assembly"],
@@ -336,6 +336,61 @@ function App() {
                   <p className="text-xs text-gray-300 leading-relaxed">Explored the ethical challenges, biases, and privacy concerns of using AI in educational data analysis, referencing the EU AI Act and GDPR.</p>
                 </a>
               </div>
+            </div>
+          </section>
+
+          {/* Section 4.5: Hobbies & Music */}
+          <section className="w-full max-w-4xl p-4 mb-12">
+            <div className="bg-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+                <h2 className="text-2xl font-bold mb-6 border-b border-white/20 pb-2 tracking-wider flex items-center gap-3">
+                  <FaSpotify className="text-green-400" /> Beyond the Code
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  
+                  {/* Hobbies List */}
+                  <div>
+                    <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+                      When I'm not designing systems or writing code, I love diving into different worlds - whether that's through music, mechanics, or tabletop adventures.
+                    </p>
+                    <ul className="space-y-4">
+                      <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
+                        <FaDiceD20 className="text-purple-400 text-xl" />
+                        <span><strong>Dungeons & Dragons</strong> - Collaborative storytelling & problem solving</span>
+                      </li>
+                      <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
+                        <FaCompactDisc className="text-blue-400 text-xl" />
+                        <span><strong>Music & CD Collecting</strong> - Avid listener across multiple genres</span>
+                      </li>
+                      <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
+                        <FaCompactDisc className="text-red-400 text-xl" />
+                        <span><strong>Car Enthusiast</strong> - Fascinated by automotive mechanics</span>
+                      </li>
+                      <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
+                        <FaCompactDisc className="text-orange-400 text-xl" />
+                        <span><strong>Gaming & Anime</strong> - Appreciator of great world-building</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Spotify Embed */}
+                  <div className="flex flex-col justify-center">
+                    <p className="text-gray-400 text-xs mb-2 uppercase tracking-widest">My Top Songs of 2025</p>
+                    <div className="w-full rounded-xl overflow-hidden shadow-lg border border-white/5">
+                      <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/5NElM0MaD3qjuZTweBC2mh?utm_source=generator&theme=0"
+                        width="100%"
+                        height="352"
+                        frameBorder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                      ></iframe>
+                    </div>
+                  </div>
+                  
+                </div>
             </div>
           </section>
 
