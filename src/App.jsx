@@ -78,7 +78,7 @@ function App() {
       </video>
 
       {/* BACKGROUND AUDIO */}
-      <audio src={audioRef} loop>
+      <audio ref={audioRef} loop>
         <source src="/lofi.mp3" type="audio/mpeg"/>
       </audio>
 
@@ -363,11 +363,11 @@ function App() {
                         <span><strong>Music & CD Collecting</strong> - Avid listener across multiple genres</span>
                       </li>
                       <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
-                        <FaCompactDisc className="text-red-400 text-xl" />
+                        <FaCar className="text-red-400 text-xl" />
                         <span><strong>Car Enthusiast</strong> - Fascinated by automotive mechanics</span>
                       </li>
                       <li className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors">
-                        <FaCompactDisc className="text-orange-400 text-xl" />
+                        <FaGamepad className="text-orange-400 text-xl" />
                         <span><strong>Gaming & Anime</strong> - Appreciator of great world-building</span>
                       </li>
                     </ul>
@@ -379,13 +379,14 @@ function App() {
                     <div className="w-full rounded-xl overflow-hidden shadow-lg border border-white/5">
                       <iframe
                         data-testid="embed-iframe"
-                        style="border-radius:12px"
+                        style={{ borderRadius: '12px' }}
                         src="https://open.spotify.com/embed/playlist/5NElM0MaD3qjuZTweBC2mh?utm_source=generator&theme=0"
                         width="100%"
                         height="352"
                         frameBorder="0"
-                        allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                        allowFullScreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
                       ></iframe>
                     </div>
                   </div>
