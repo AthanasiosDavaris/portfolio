@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { useState, useRef } from 'react'
 import { FaSpotify, FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaVolumeUp, FaVolumeMute, FaChevronDown, FaCode, FaServer, FaSearch, FaRobot, FaGamepad, FaLock, FaCertificate, FaBook, FaGoogle, FaSitemap, FaMicrochip, FaWindowMaximize, FaDiceD20, FaCar, FaCompactDisc } from 'react-icons/fa'
 
@@ -455,6 +456,9 @@ function App() {
           <p>&copy; 2026 Athanasios Davaris. All rights reserved.</p>
         </footer>
       )}
+
+      <Analytics />
+
     </div>
   )
 }
